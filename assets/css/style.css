@@ -1,0 +1,103 @@
+/* font-family */
+
+*{
+  /* font-family: ; */
+}
+
+:root{
+  --primary-color:#EDAC44;
+  --secondary-color:#945e07;
+  --white:#fff;
+  --light-white:#d3d3d3d5;
+  --black:#000;
+}
+
+/* navbar */
+/* navbar */
+.navbar{
+  background:var(--light-white) !important;
+  box-shadow: 0 .2rem .2rem #1c1b1bcc;
+}
+
+.navbar .navbar-nav .nav-link{
+  color:var(--black) !important;
+  padding: 0 1.2rem;
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color:var(--primary-color) !important;
+}
+.navbar .navbar-nav .nav-link.active::before{
+  content: "";
+  width: 100%;
+  margin: 0 auto;
+  height: .5vh;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: var(--primary-color) !important;
+}
+
+/* banner slider */
+/* banner slider */
+#sliders .swiper-slide {
+   text-align: center;
+   font-size: 18px;
+   background: #9e6c06;
+   color:#fff;
+   height: 90vh;
+   /* Center slide text vertically */
+   display: flex;
+   flex-direction: column;
+   -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+ }
+ #sliders .swiper-slide p{
+  width: 60%;
+  margin: 0 auto;
+ }
+.swiper-button-next,
+.swiper-button-prev{
+  color: var(--white) !important;
+  background: var(--secondary-color);
+  padding: 2rem;
+  border-radius: 50%;
+  font-size: .2rem !important;
+ }
+.swiper-pagination-bullet{
+  background: var(--white);
+ }
+ #clickreserve,.dropdown-menu,#bestroom,#about-why{
+  background: var(--light-white) !important;
+ }
+
+ /* room style */
+ /* room style */
+#room-sliders{
+  height: 86vh;
+  background: var(--secondary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 10rem 0;
+}
+#rooms .card{
+  overflow: hidden;
+}
+#rooms .card:hover img{
+  opacity: 0.7;
+  transition: all 4s ease;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+  cursor: pointer;
+}
